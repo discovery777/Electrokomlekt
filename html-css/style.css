@@ -1,0 +1,2308 @@
+@charset "utf-8";
+/* Простой «резиновый» носитель
+   Примечание. Для «резинового» носителя требуется удалить атрибуты высоты и ширины из HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE6 не поддерживает атрибут max-width, поэтому по умолчанию используется ширина 100 % */
+.ie6 img {
+	width:100%;
+}
+.clearfix
+{
+	margin:0;
+	padding:0;
+}
+*
+{
+	font-family:Verdana, Geneva, sans-serif;
+}
+ul
+{
+	list-style:none;
+	display:inline-block;
+}
+li
+{
+	float:left;
+}
+a
+{
+	text-decoration:none;
+	color:#5777A4;
+}
+a:hover
+{
+	text-decoration:underline;
+	color:#5777A4;
+}
+/* Мобильный макет: 480 пикс. и меньше. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+/*=========================Корзина и КОнсултант=========================*/
+.consult
+{
+	background-image:url(img/consultant.fw.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+	width: 91px;
+	height: 71px;
+	position: fixed;
+	right: 0;
+	top:150px;
+}
+.consult span,.basket span
+{
+	color:white;
+	text-transform:uppercase;
+	font-size:8px;
+	position: absolute;
+	display: inline-block;
+	bottom: 8%;
+}
+.consult span
+{
+	left: 27%;
+}
+.basket span
+{
+	left: 37%;
+}
+.consult:hover,.basket:hover
+{
+	text-decoration:none;
+}
+.basket
+{
+	background-image:url(img/basket.fw.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+	width: 91px;
+	height: 71px;
+	position: fixed;
+	right: 0;
+	top:230px;
+}
+/*=========================Верхнее Меню=================================*/
+#nav {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background:#eeeeee;
+}
+.nav
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+	max-width: 970px;
+}
+#nav ul
+{
+	list-style: none;
+	display:inline-block;
+	float:right;
+	padding: 2px 0px 5px 0px;
+}
+#nav ul li
+{
+	float:left;
+}
+#nav ul li:last-child
+{
+	margin:0px;
+}
+#nav ul li a
+{
+	font-size:10px;
+	color:#5777A4;
+	text-decoration:none;
+}
+#nav ul li a:hover
+{
+	text-decoration:underline;
+}
+/*=========================Логотип======================================*/
+.logo
+{
+	display:inline-block;
+}
+/*=========================Телефоны=====================================*/
+.telephone
+{
+	vertical-align: top;
+}
+.telephone li
+{
+	float:none;
+}
+.telephone li a
+{
+	text-decoration:none;
+	font-size:14px;
+	color:#5777A4;
+}
+.telephone li a:hover
+{
+	text-decoration:underline;
+}
+/*=========================Форма авторизации============================*/
+.autorization
+{
+	display:inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.autorization ul
+{
+	width: 100%;
+}
+.autorization ul li
+{
+	float: none;
+	display: inline-block;
+}
+.autorization ul li a
+{
+	font-size: 11px;
+	color: #5777A4;
+}
+.autorization ul li span
+{
+	color:#5777A4;
+	font-size: 10.66px;
+}
+/*=========================Форма поиска=================================*/
+.search
+{
+	float:right;
+	display:inline-block;
+}
+.search  input[type="text"]
+{
+	background: #DAEBE7;
+	outline: none;
+	border: none;
+	padding: 0 0px 0px 5px;
+	float: left;
+}
+.search input[type="button"] 
+{
+	background-image: url(img/search.fw.png);
+	background-color: #88BFB3;
+	border: none;
+	width: 31px;
+	height: 31px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	padding: 0;
+	float: left;
+}
+/*=========================Меню разделов===================================*/
+.menu2
+{
+	margin-top:-3px;
+}
+.menu1 li 
+{
+	max-width:114px;
+	margin-right:8.28px;
+	text-align: center;
+}
+.menu2 li 
+{
+	width:100%;
+	margin-right: 8.28px;
+	max-width: 114px;
+	text-align: center;
+	word-wrap: break-word;
+}
+.menu2 li:last-child
+{
+	margin:0px;
+}
+.menu1 li:last-child
+{
+	margin:0px;
+}
+.menu ul li a
+{
+	font-size:11px;
+	display:inline-block;
+	width:100%;
+	border-right: 10px solid #c4c4c4;
+	word-break: break-word;
+	color: #5777A4 !important;
+}
+.menu ul li:last-child a
+{
+	border: none !important;
+}
+.menu ul li:hover a
+{
+	background-color:#88bfb3;
+}
+.menu ul li:hover a img
+{
+	background-color:#88bfb3;
+}
+.section
+{
+	background-color:#DAEBE7;
+	float:left;
+	border: none !important;
+}
+.menu ul li a img
+{
+	background-color:#B1C2BF;
+}
+/*=========================Слайдер=======================================*/
+#slider-wrap{ /* Оболочка слайдера и кнопок */
+	width:481px; 
+	margin-top: 10px;
+	display:inline-block;
+	}
+#slider{ /* Оболочка слайдера */
+	width:481px;
+	height:240px;
+	overflow: hidden;
+	position:relative;}
+.slide
+{ /* Слайд */
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+.slide p {
+margin: 0;
+position: absolute;
+color:#5777A4;
+font-size:10px;
+width: 100%;
+}
+.sli-links
+{ /* Кнопки смены слайдов */
+	margin-top:10px;
+	text-align:right;
+}
+.sli-links .control-slide
+{
+	margin:2px;
+	display:inline-block;
+	width:8px;
+	height:9px;
+	overflow:hidden;
+	text-indent:-9999px;
+	background:#88BFB3;
+	border-radius: 50%;
+}
+
+.sli-links .control-slide.active
+{
+	background:#5A79A5;
+}
+/*=========================Банеры========================================*/
+.banner
+{
+	float:right;
+}
+.banner li
+{
+	float:none;
+	margin-top: 10px;
+}
+.banner li:last-child
+{
+	margin-top:5px;
+}
+.silka
+{
+	display:inline-block;
+	background:#DAEBE7;
+	text-align: center;
+	font-size:10px;
+	color: #5777A4 !important;
+}
+/*=========================Доставка========================================*/
+.delivery
+{
+	background:#DAEBE7;
+	padding: 5px 0px 5px 10px;
+	margin-top: 12px;
+}
+.delivery a
+{
+	color:#5777A4;
+	font-weight:bold;
+	font-size:12px;
+}
+.delivery img
+{
+	margin-right:10px;
+}
+/*=========================Список светотехника=============================*/
+.lighting
+{
+	margin-top:12px;
+}
+.lighting li
+{
+	margin-right:4.6px;
+}
+.lighting li a
+{
+	display:inline-block;
+}
+.light
+{
+	width:100%;
+	background-color:#6A8BAC;
+	color:white !important;
+	font-size:11px;
+	padding: 10px 0px 10px 12px;
+	max-width: 227px;
+	background-image:url(img/strela.fw.png);
+	background-repeat:no-repeat;
+	background-position: 97% 50%;
+}
+.light:hover
+{
+	color:white;
+}
+.lighting li:last-child
+{
+	margin:0px;
+}
+/*=========================Список Новинок и лидеров продаж=================*/
+.spisok
+{
+	margin-top:10px;
+}
+.spisok li
+{
+	margin-right:6.5px;
+}
+.spisok li:last-child
+{
+	margin:0px;
+}
+.novetly
+{
+	width:100%;
+	margin-bottom: 10px;
+}
+.novetly span
+{
+	border-left: 10px solid #5a7ca5;
+	color: #597BA5;
+	font-size: 11px;
+	text-transform: uppercase;
+	padding: 10px 0px 10px 12px;
+	height: 20px;
+	display: inline-block;
+	background: #E5F1EE;
+	width: 100%;
+	max-width: 297px;
+	margin-bottom:15px;
+}
+.novetly li
+{
+	float:none;
+	margin-bottom:10px;
+	display: inline-block;
+}
+.novetly p
+{
+	display:inline;
+	margin:0px;
+	color: #9F9F9F;
+	font-size: 11px;
+	float: left;
+}
+.novetly b
+{
+	float: left;
+	width: 100%;
+	max-width: 100px;
+	color:#FFB027;
+	font-size:18px;
+}
+.novetly a
+{
+	display:inline-block;
+	vertical-align: top;
+	color:#597BA5;
+	font-size:14px;
+	font-weight:bold;
+	float: left;
+	margin-right: 5px;
+}
+.name-tovar
+{
+	margin-top:2px;
+	margin-right:0px;
+}
+/*=========================Список2 светотехника=============================*/
+.lighting2
+{
+	margin-top:10px;
+}
+.lighting2 li
+{
+	margin-right:4.6px;
+}
+.lighting2 li:last-child
+{
+	margin:0px;
+}
+.lighting2 li a
+{
+	display:inline-block;
+}
+.light2
+{
+	width:100%;
+	background-color:#ffb028;
+	color:white !important;
+	font-size:11px;
+	padding: 10px 0px 10px 12px;
+	max-width: 227px;
+	background-image:url(img/strela.fw.png);
+	background-repeat:no-repeat;
+	background-position: 97% 50%;
+}
+.light2:hover
+{
+	color:white;
+}
+.light:hover
+{
+	color:white;
+}
+.lighting li:last-child
+{
+	margin:0px;
+}
+/*=========================Список2 Новинок и лидеров продаж=================*/
+.novetly .orange
+{
+	border-left: 10px solid #FFB028;
+	color: #FFB028;
+}
+.novetly li span
+{
+	border: none;
+	color: #F89A00;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0px;
+	height: auto;
+	display: inline-block;
+	background: none;
+	width: 100%;
+	max-width: 297px;
+	margin-bottom: 5px;
+}
+.news p
+{
+	color:#727272;
+}
+.news a
+{
+	color:#597BA5;
+	font-size:11px;
+	text-decoration:underline;
+	font-weight:bold;
+	margin: 0px;
+	float: none;
+}
+.spisok2
+{
+	border-bottom:1px solid #83B8B2;
+}
+/*=========================Список категорий=================================*/
+.equipment li
+{
+	max-width: 198px;
+	padding: 16px 22px 22px 22px;
+	margin-top:10px;
+}
+.equipment li:nth-child(2n+1)
+{
+	background:#EDF5F3;
+}
+.equipment li a
+{
+	width:100%;
+	display:inline-block;
+	text-decoration:underline;
+	color:black;
+	line-height: 18px;
+}
+.section-name
+{
+	color:black;
+	font-size:18px;
+	text-align:center;
+	text-decoration:none !important;
+}
+.section-name:hover
+{
+	color:black;
+	text-decoration:underline !important;
+}
+/*=========================Почему именно здесь==============================*/
+.why-buy 
+{
+	border:1px solid #cfe5e1;
+	background:#F0F7F5;
+	margin-top: 10px;
+}
+.why-buy li
+{
+	max-width: 201px;
+	background-color: #DAEBE7;
+	border: 1px solid #d0d6d4;
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: 5% 50%;
+}
+.why-buy li a
+{
+	text-decoration:none;
+	display: inline-block;
+	margin-left: 20%;
+}
+.why-buy li p
+{
+	color:#727272;
+	font-size:10px;
+	display:inline-block;
+	max-width:146px;
+	margin-left: 14px;
+}
+.why-buy b
+{
+		color:#597AA5;
+}
+.why-buy li:nth-child(2)
+{
+	background-image:url(img/choose1.fw.png);
+}
+.why-buy li:nth-child(3)
+{
+	background-image:url(img/choose2.fw.png);
+}
+.why-buy li:nth-child(4)
+{
+	background-image:url(img/choose3.fw.png);
+}
+.why-buy li:nth-child(5)
+{
+	background-image:url(img/choose4.fw.png);
+}
+.why-buy span
+{
+	width:100%;
+	display: inline-block;
+		font-weight:bold;
+	color:#597AA5;
+	font-size:14px;
+	margin-bottom:14px;
+}
+/*=========================Футер============================================*/
+footer
+{
+	background:#5A7CA5; 
+	color:white;
+}
+.footer-menu1
+{
+	max-width:234px;
+}
+.footer-menu2
+{
+	max-width: 231px;
+}
+.footer-menu2 li
+{
+	width:100%;
+}
+.footer-menu1 li a
+{
+	color:white !important;
+	font-size:11px;
+}
+.footer-menu2 li a
+{
+	color:white !important;
+	font-size:11px;
+}
+.footer-menu1 span
+{
+	width: 100%;
+	display: inline-block;
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom: 15px;
+}
+.footer-menu2 span
+{
+	width: 100%;
+	display: inline-block;
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom: 15px;
+}
+.contacts
+{
+	color:white !important;
+	font-size:14px;
+}
+.contacts:hover
+{
+	color:white;
+}
+footer p
+{
+	display:inline;
+	margin:0;
+}
+.icons 
+{
+	margin:5px 0px 25px 0px;
+}
+.icons li
+{
+	margin-right:7px;
+	float: left !important;
+}
+.icons a
+{
+	display:inline-block;
+}
+.icons a img
+{
+	border-radius:5px;
+}
+.all-contacts
+{
+	display:inline-block;
+	max-width:284px;
+}
+.spisok3
+{
+	vertical-align: top;
+	max-width: 258px;
+}
+.spisok3 li
+{
+	float:none;
+}
+.spisok3 li:first-child
+{
+	text-align: center;
+}
+.footer-down
+{
+	background:#E0E7E5;
+	margin-bottom:5px;
+}
+.footer-down a
+{
+	float:right;
+}
+/*=========================Вторая страница=================================*/
+/*=========================Категории=======================================*/
+.first-part
+{
+	float:left;
+}
+.section-list
+{
+	background:#eff6f5;
+	margin-top:7px;
+}
+.section-list li
+{
+	float: none;
+	display: inline-block;
+}
+.section-menu li:first-child a
+{
+	font-weight:bold;
+	font-size:14px;
+	color: #5777A4 !important;
+	margin-bottom: 6px;
+	display: inline-block;
+}
+.section-menu li
+{
+	margin: 0px !important;
+}
+.section-menu li a
+{
+	font-size:12px;
+	color:#727272 !important;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+/*=========================Спецпредложения и Акции=========================*/
+.special
+{
+	background-image: url(img/2page-baner.png);
+	display: block;
+	height: 129px;
+	max-width: 239px;
+	margin-top: 10px;
+	position: relative;
+	font-size:11px;
+	text-transform:uppercase;
+}
+.special span
+{
+	background-color: #5a79a5;
+	color: white;
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+	max-width: 224px;
+	bottom: 0;
+	background-image:url(img/strela.png);
+	background-repeat:no-repeat;
+	background-position: 95% 50%;
+	padding: 10px 0px 10px 15px;
+}
+.special:hover span
+{
+	text-decoration:underline;
+}
+.stock
+{
+	background-image: url(img/2page-baner.png);
+	display: block;
+	height: 129px;
+	max-width: 239px;
+	margin-top: 10px;
+	position: relative;
+	font-size:11px;
+	text-transform:uppercase;
+}
+.stock span
+{
+	background-color: #ffb028;
+	color: white;
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+	max-width: 224px;
+	bottom: 0;
+	background-image:url(img/strela.png);
+	background-repeat:no-repeat;
+	background-position: 95% 50%;
+	padding: 10px 0px 10px 15px;
+}
+.stock:hover span
+{
+	text-decoration:underline;
+}
+/*=========================Доставка========================================*/
+.dostavka
+{
+	background-image:url(img/dostavka.png);
+	background-repeat:no-repeat;
+	background-color:#5a79a5;
+	display: inline-block;
+	color: white !important;
+	text-transform: uppercase;
+	font-size: 11px;
+	padding: 13px 20px 13px 0px;
+	text-align: right;
+	margin-top: 10px;
+	background-position: 4% 50%;
+}
+/*=========================Блок информацииа================================*/
+.information
+{
+	background:#f0f7f5;
+	border: 1px solid #cfe5e1;
+	margin-top: 10px;
+	padding: 8px 15px 15px 15px;
+}
+.information span
+{
+	font-weight: bold;
+	font-size: 15px;
+	color: #5777A4 !important;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.all-info
+{
+	font-size: 11px !important;
+	color: #5777A4 !important;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.information a
+{
+	float:left;
+	width: 100%;
+	font-size: 12px;
+	color: #727272;
+	margin-bottom: 7px;
+}
+/*=========================Вторая часть 2-й страницы=======================*/
+.second-part
+{
+	float: right;
+	margin-top: 7px;
+}
+.breadcrumbs
+{
+	width:100%;
+	padding-left: 5px;
+}
+.breadcrumbs span
+{
+	float:left;
+	color:#B7B7B7;
+	margin: 0px 5px;
+}
+.breadcrumbs li
+{
+	
+}
+.breadcrumbs li a
+{
+	color:#B7B7B7;
+	font-size:12px;	
+}
+.name-category
+{
+	font-size:24px;
+	color:#597AA5 ;
+	display: inline-block;
+	margin-left: 10px;
+	line-height: 20px;
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+/*=========================Слайдер страницы раздела========================*/
+.slider-wrap1
+{
+	margin-left:10px;
+	margin-right: 5px;
+}
+/*=========================Баннер страницы=================================*/
+.banner2
+{
+	max-width: 232px;
+	display: inline-block;
+	float: right;
+	margin-top: 10px;
+}
+.banner2 img
+{
+	height: 130px;
+}
+/*=========================Подкатегория вторая часть======================*/
+.podcategory
+{
+	margin-left:10px;
+	margin-top: 10px;
+}
+.podcategory1
+{
+	margin-top:-5px;
+}
+.podcategory li
+{
+	width: 25%;
+	text-align: center;
+	margin-top: 10px;
+}
+.podcategory span
+{
+	color: #727272;
+	font-size: 12px;
+	width: 100%;
+	display: inline-block;
+	line-height: 10px;
+	margin-top: 5px;
+}
+.name-podcategory
+{
+	display:inline-block;
+	width:100%;
+	background:#E5F1EE;
+	border-left:10px solid #88BFB3;
+	max-width:698px;
+	padding: 12px 0px 15px 12px;
+	font-size: 16px;
+	color: #597BA5 !important;
+	line-height: 14px;
+	font-weight: bold;
+}
+.all-podcategory
+{
+	width: 100%;
+	display: inline-block;
+	font-size: 11px !important;
+	color: #5777A4 !important;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-top: 7px;
+}
+/*========================================================================*/
+.podcategory2
+{
+	margin-left: 10px;
+	margin-top: -5px;
+}
+.podcategory2 li
+{
+	max-width: 226px;
+}
+.podcategory2 img
+{
+	float:left;
+}
+.podcategory2-name
+{
+	display: inline-block;
+	width: 100%;
+	background: #E5F1EE;
+	border-left: 10px solid #88BFB3;
+	padding: 12px 0px 15px 12px;
+	font-size: 16px;
+	color: #597BA5 !important;
+	line-height: 14px;
+	max-width: 205px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.podcategory2-spisok
+{
+	max-width: 108px !important;
+}
+.podcategory2-spisok li
+{
+	margin-right: 0px !important;
+}
+.podcategory2-spisok a
+{
+	color:#727272;
+	font-size:12px;
+}
+/*========================================================================*/
+.podcategory3
+{
+	margin-left: 10px;
+	margin-top: 4px;
+}
+.podcategory3 li
+{
+	display: inline-block;
+	background: #E5F1EE;
+	border-left: 10px solid #88BFB3;
+	margin-bottom: 10px;
+	padding: 8px 12px;
+	width: 100%;
+	max-width: 192px;
+	position:relative;
+}
+.podcategory3 li a
+{
+	display:inline-block;
+}
+.podcategory3 li span
+{
+	color: #597BA5 !important;
+	font-size: 16px;
+	line-height: 14px;
+	position: absolute;
+	top: 40%;
+	font-weight: bold;
+	right: 4%;
+}
+.podcategory3 li:hover span
+{
+	text-decoration:underline;
+}
+/*=========================Быстрый выбор===================================*/
+.quick-selection
+{
+	margin-left:10px;
+	max-width:720px;
+	display: inline-block;
+}
+.name-quick
+{
+	color:#597BA5;
+	font-size:16px;
+	font-weight:bold;
+	width: 100%;
+	display: inline-block;
+}
+.selection li
+{
+	padding: 2px 5px 6px 7px;
+}
+.selection li a
+{
+	color:#FF9F00;
+	font-size:12px;
+	text-decoration:underline;
+}
+.selection li:hover
+{
+	background:#ffb028;
+}
+.selection li:hover a
+{
+	color:#4C4C4C;
+}
+.spisok-tovar
+{
+	width:100%;
+}
+.spisok-tovar li
+{
+	border: 1px solid #daebe7;
+	max-width: 99px;
+	margin-right: 10px;
+	padding: 0px 5px 10px 5px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.spisok-tovar li:last-child
+{
+	margin:0px;
+}
+.spisok-tovar li:nth-child(6)
+{
+	margin:0px;
+}
+.spisok-tovar input[type="button"]
+{
+	color:white;
+	font-size:14px;
+	text-transform: uppercase;
+	border:1px solid #b37c1c;
+	background-color:#ffb028;
+	padding: 10px 20px;
+	margin-top: 10px;
+}
+.spisok-tovar input[type="button"]:hover
+{
+	background:#e89d1b;
+	text-decoration:underline;
+}
+.name-tovar1
+{
+	color:#597AA5 !important;
+	font-size:11px;
+	font-weight:bold;
+	display: inline-block;
+	margin-top: 10px;
+}
+.characteristics
+{
+	color:#9F9F9F;
+	font-size:10px;
+}
+.price
+{
+	color:#F9A61F;
+	font-weight:bold;
+	font-size:18px;
+	display: inline-block;
+	margin-top: 8px;
+}
+/*=========================Статьи==========================================*/
+.article
+{
+	max-width:720px;
+	margin-left:10px;
+	float: right;
+}
+.article li 
+{
+	margin-bottom: 5px;
+	max-width: 217px;
+}
+.text
+{
+	padding-left:7px;
+}
+.article li span
+{
+	color:#FF9F00;
+	font-size:12px;
+}
+.article li p
+{
+	color:#727272;
+	font-size:11px;
+	margin-top: 5px;
+}
+.article li a span
+{
+	display: inline-block;
+	background: #E5F1EE;
+	border-left:10px solid #ffb028;
+	padding: 12px 0px 15px 12px;
+	font-size: 11px;
+	width:100%;
+	max-width: 196px;
+	text-transform:uppercase;
+}
+.all-article
+{
+	width:100%;
+	display:inline-block;
+	font-size: 11px !important;
+	color: #5777A4 !important;
+	font-weight: bold;
+	text-decoration: underline;
+}
+/*=========================Конец Второй страницы===========================*/
+/*=========================3-я страница====================================*/
+/*=========================1-я часть 3-й страницы==========================*/
+.subsection-first-part
+{
+	display:inline-block;
+	float:left;
+	margin-right:5px;
+	margin-top: 8px;
+}
+.parametr
+{
+	width:100%;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 14px;
+	color: #5777A4 !important;
+	margin-bottom: 10px;
+}
+.name-filter
+{
+	font-weight: bold;
+	font-size: 16px;
+	color: #5777A4 !important;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+.filter
+{
+	padding:22px 0px 15px 14px;
+		background:#EFF6F5;
+}
+.filter li
+{
+	width:100%;
+}
+.filter li:last-child
+{
+	margin-bottom: 0px;
+}
+.filter li div span
+{
+	display: inline-block;
+	line-height: 12px;
+	vertical-align: top;
+	color:#727272;
+	margin-left: 10px;
+}
+.buttons
+{
+	text-align:center;
+}
+.filter input[type="button"]
+{
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	border: 1px solid #648C83;
+	background-color: #88BFB3;
+	padding: 12px;
+	margin-bottom: 7px;
+	width: 115px;
+}
+.filter input[type="button"]:hover
+{
+	 background: linear-gradient(to bottom, #fefcea, #f1da36);
+ 	background: -moz-linear-gradient(top, #6db0a1, #95c5ba);
+	background: -webkit-gradient(linear, center top, center bottom, from(#6db0a1), to(#95c5ba));
+	background: -o-linear-gradient(top, #6db0a1, #95c5ba);
+}
+/*=========================2-я часть 3-й страницы==========================*/
+.subsection-second-part
+{
+	display:inline-block;
+	float:right;
+	margin-top: 7px;
+	padding-left: 2px;
+}
+.subsection-second-part .breadcrumbs
+{
+	padding-left: 0px;
+}
+.name-subcategory
+{
+	font-size: 24px;
+	color: #597AA5;
+	display: inline-block;
+	line-height: 20px;
+	margin-top: 5px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.sort
+{
+	margin-top:5px;
+}
+.navigation
+{
+	float:right;
+}
+.navigation input[type="button"]
+{
+	float:right;
+	color: white;
+	font-size: 12px;
+	border: 1px solid #648C83;
+	background-color: #88BFB3;
+	padding: 7px;
+	line-height: 10px;
+	margin-left:2px;
+}
+.navigation li
+{
+	border:1px solid #E3F0ED;
+	background:#F7F7F7;
+	width: 22px;
+	text-align: center;
+	padding: 2px 0px;
+	margin-right: 3px;
+	margin-top: 2px;
+}
+.navigation li:hover
+{
+	background:#DAEBE7;
+}
+.navigation li:hover a
+{
+	color:#1F5F99;
+}
+.navigation li a
+{
+	color:#88BFB3;
+	font-size:12px;
+}
+.navigation input[type="button"]:hover
+{
+	 background: linear-gradient(to bottom, #fefcea, #f1da36);
+ 	background: -moz-linear-gradient(top, #6db0a1, #95c5ba);
+	background: -webkit-gradient(linear, center top, center bottom, from(#6db0a1), to(#95c5ba));
+	background: -o-linear-gradient(top, #6db0a1, #95c5ba);
+}
+.spisok-subcategory
+{
+	width:100%;
+	max-width:687px;
+	margin-top: 5px;
+}
+.spisok-subcategory li
+{
+	border:1px solid #DAEBE7;
+	margin-bottom:5px;
+	width: 100%;
+}
+.spisok-subcategory li ul li
+{
+	border:none;
+	margin:0px;
+	width:auto;
+	padding:0px;
+}
+.description
+{
+	max-width:308px;
+}
+.description a
+{
+	color:#1F5F99;
+	font-size:18px;
+	display:inline-block;
+	margin-bottom:14px;
+}
+.description span
+{
+	width:100%;
+	display:inline-block;
+	color:#727272;
+	font-size:11px;
+}
+.compare
+{
+	text-align:center;
+	margin-top: 14px;
+}
+.compare a
+{
+	color:#3A72A5;
+	display:inline-block;
+	font-size:12px;
+	vertical-align: top;
+	line-height: 11px;
+	margin-left:5px;
+}
+.spisok-subcategory li ul li:last-child
+{
+	max-width:119px;
+}
+.spisok-subcategory li ul li:last-child span
+{
+	color:#88BFB3;
+	font-size:11px;
+}
+.price-tovar
+{
+	color:#1F5F99 !important;
+	font-size:20px !important;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+.number
+{
+	display:inline-block;
+}
+.number a
+{
+	float: left;
+	border: 1px solid #DAEBE7;
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+}
+.minus
+{
+	background-image:url(img/minus.fw.png);
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+}
+.plus
+{
+	background-image:url(img/plus.fw.png);
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+}
+.number a:hover
+{
+	text-decoration:none;
+}
+.number input
+{
+	width:55px;
+	border-top: 1px solid #DAEBE7;
+	border-bottom: 1px solid #DAEBE7;
+	border-left: 0px;
+	border-right: 0px;
+	height: 27px;
+	text-align: center;
+	color: #1F5F99;
+	font-size: 18px;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.number input:focus
+{
+	outline: 0;
+}
+.buy
+{
+	color: white !important;
+	font-size: 14.93px;
+	text-transform: uppercase;
+	border: 1px solid #b37c1c;
+	background-color: #ffb028;
+	padding: 12px;
+	display: inline-block;
+	line-height: 12px;
+	margin-top:2px;
+}
+.buy:hover
+{
+	background: #e89d1b;
+	text-decoration: none;
+}
+/*=========================Конец 3-й страницы==============================*/
+/*=========================4-я страница====================================*/
+/*=========================1-я часть 4-й страницы==========================*/
+.commodity-first-part
+{
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+}
+.breadcrumbs1
+{
+	padding:0px;
+}
+/*=========================Слайдер=======================================*/
+#commodity-slider-wrap{ /* Оболочка слайдера и кнопок */
+	width:300px; 
+	margin-top: 10px;
+	display:inline-block;
+	margin-right: 25px;
+	}
+#commodity-slider{ /* Оболочка слайдера */
+	width:300px;
+	height:240px;
+	overflow: hidden;
+	position:relative;}
+.commodity-slide
+{ /* Слайд */
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+.sli-links1
+{ /* Кнопки смены слайдов */
+	margin-top:10px;
+	text-align: center;
+}
+.sli-links1 .control-slide
+{
+	margin:2px;
+	display:inline-block;
+	width:8px;
+	height:9px;
+	overflow:hidden;
+	text-indent:-9999px;
+	background:#88BFB3;
+	border-radius: 50%;
+}
+
+.sli-links1 .control-slide.active
+{
+	background:#5A79A5;
+}
+/*=========================================================================*/
+.name-commodity
+{
+	display:inline-block;
+	vertical-align: top;
+	color:#1F5F99;
+	font-size:18px;
+	width: 100%;
+}
+.commodity-info 
+{
+	display: inline-block;
+	float: right;
+	position: relative;
+}
+.price-commodity
+{
+	display: inline-block;
+	margin-top: 10px;
+	vertical-align: top;
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.price-commodity .price-tovar
+{
+	text-align:left;
+}
+.price-commodity span
+{
+	color: #88BFB3;
+	font-size: 11px;
+}
+.number-commodity li
+{
+	float:none;
+	margin: 0;
+	padding: 0;
+}
+.number-commodity li:first-child,.number-commodity li:last-child
+{
+	height:17px;
+}
+.commodity-buy
+{
+	border:1px solid #C38E31;
+	display: inline-block;
+	max-height: 60px;
+}
+.commodity-buy input
+{
+	max-width:49px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #FFC664;
+	border-bottom: 1px solid #FFC664;
+	border-right:none;
+	border-left:none;
+	color:#6491B9;
+	font-size:14px;
+	height: 25px;
+}
+.commodity-buy input:focus
+{
+	outline:0;
+}
+.minus-in-basket
+{
+	background-color:#FFB028;
+	background-image:url(img/minus-in-basket.fw.png);
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	display:inline-block;
+	width:49px;
+	height:17px;
+}
+.minus-in-basket:hover,.plus-in-basket:hover
+{
+	background-color: #e89d1b;
+	text-decoration: none;
+}
+.plus-in-basket
+{
+	background-color:#FFB028;
+	background-image:url(img/plus-in-basket.fw.png);
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	display:inline-block;
+	width:49px;
+	height:16px;
+}
+.in-basket
+{
+	color: white !important;
+	font-size: 14.93px;
+	text-transform: uppercase;
+	background-color: #ffb028;
+	padding: 24px 12px;
+	display: inline-block;
+	line-height: 12px;
+	float: left;
+	border-right: 1px solid #FFD691;
+}
+.in-basket:hover
+{
+	background: #e89d1b;
+	text-decoration: none;
+}
+.commodity-article
+{
+	color:#727272;
+	font-size:12px;
+}
+.commodity-characteristics
+{
+	color:#727272;
+	font-size:12px;
+}
+.commodity-characteristics b
+{
+	margin-bottom:10px;
+}
+.commodity-characteristics b,.commodity-characteristics span
+{ 
+	display:inline-block;
+	width:100%;
+}
+.commodity-compare
+{
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.star
+{
+	width:100%;
+}
+.star li
+{
+	margin-right:3px;
+}
+.star li:last-child
+{
+	margin:0px;
+}
+/*=========================Табы============================================*/
+div.tabs 
+{
+margin-top:10px;
+}
+
+div.container { 
+margin: auto; 
+width: 90%; 
+margin-bottom: 10px;
+}
+
+ul.tabNavigation {
+list-style: none;
+margin: 0;
+padding: 0;
+width: 100%;
+border-bottom: 1px solid #daebe7;
+height: 41px;
+}
+
+ul.tabNavigation li 
+{
+display: inline;
+
+margin-right: 5px;
+}
+
+ul.tabNavigation li a {
+display: inline-block;
+color:#597BA5;
+text-decoration: none;
+font-size:15px;
+height: 41px;
+border-right: 1px solid #ffffff;
+border-top: 1px solid #ffffff;
+border-left: 1px solid #ffffff;
+}
+ul.tabNavigation li a p{
+display: inline-block;
+color:#597BA5;
+text-decoration: none;
+font-size:15px;
+margin: 11px 10px 0px 10px;
+vertical-align: top;
+}
+ul.tabNavigation li a span
+{
+	display:none;
+}
+ul.tabNavigation li a.selected span,
+ul.tabNavigation li a.selected:hover span 
+{
+	display: inline-block;
+	width: 9px;
+	height: 40px;
+	background: #88BFB3;
+	border-right: 1px solid #daebe7;
+	border-bottom: 1px solid #daebe7;
+}
+ul.tabNavigation li a.selected,
+ul.tabNavigation li a.selected:hover {
+border-right: 1px solid #daebe7;
+border-top: 1px solid #daebe7;
+border-left: 1px solid #daebe7;
+font-weight:bold;
+background-color:white;
+}
+
+ul.tabNavigation li a:hover {
+border-right: 1px solid #daebe7;
+border-top: 1px solid #daebe7;
+border-left: 1px solid #daebe7;
+background-color:white;
+height:40px;
+border-bottom: 1px solid #ffffff;
+}
+ul.tabNavigation li a:focus {
+outline: 0;
+}
+.explanation
+{
+	color:#727272;
+	margin-top: 15px;
+	margin-left: 11px;
+	margin-bottom:20px;
+}
+div.tabs div img
+{
+	float:left;
+}
+.product-characteristics
+{
+	display:inline-block;
+	margin-left: 20px;
+	color:#727272;
+	font-size:12px;
+	list-style: none;
+	max-width: 474px;
+}
+.product-characteristics p,b
+{
+float:left;
+}
+.product-characteristics li
+{
+width:100%;
+}
+.product-characteristics li:nth-child(3)
+{
+margin-top:20px;
+}
+/*=========================2-я часть 4-й страницы==========================*/
+.commodity-second-part
+{
+	display: inline-block;
+	float: right;
+}
+.block 
+{
+    border: 1px solid #E1EFEC;
+    position: relative;
+	padding:6px 10px 10px 4px;
+	color:#B7B7B7;
+	font-size:11px;
+}
+.block2
+{
+   border-top:none;
+}
+.block::before, .block::after 
+{
+    content: ''; 
+    position: absolute;
+    right: 15px;
+	bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid #E1EFEC;
+}
+.block::after 
+{
+    border-top: 10px solid white;
+    bottom: -19px; 
+}
+.block p
+{
+	margin:0px;
+	line-height: 16px;
+}
+.block a
+{
+   color:#9FB2CC;
+   font-size:11px;
+   text-decoration: underline;
+}
+.coment1
+{
+	margin-right:5px;
+}
+.all-reviews
+{
+	color:#5979A5 !important;
+	font-size:10px;
+	text-decoration: underline;
+	display: block;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.block3
+{
+	margin-top:12px;
+}
+.block3 span
+{
+	color:#FF9F00;
+	font-size:12px;
+}
+.block3 p
+{
+	color:#727272;
+	font-size:11px;
+	margin: 10px 0px 0px 0px;
+}
+.you-look
+{
+	margin-top:15px;
+}
+.name-you-look
+{
+	border-left: 10px solid #5a7ca5;
+	color: #597BA5;
+	font-size: 11px;
+	padding: 14px 0px 14px 12px;
+	text-transform: uppercase;
+	display: inline-block;
+	list-style:none;
+	background: #E5F1EE;
+	width: 100%;
+	max-width: 217px;
+}
+.product-look li
+{
+	margin-top:10px;
+}
+.product-look li a
+{
+	display: inline-block;
+	list-style: none;
+}
+.name-product-look
+{
+	width: 100%;
+	font-size:14px;
+	color: #597BA5 !important;
+	font-weight:bold;
+	margin-bottom: 10px;
+}
+.img-product-look
+{
+	float:left;
+	margin-right: 15px;
+}
+.product-look b
+{
+	color:#FAA71F;
+	font-size:18px;
+	font-weight:bold;
+	display: inline-block;
+	list-style: none;
+	width: 100%;
+	max-width: 100px;
+	line-height: 13px;
+	margin-top: 4px;
+}
+.product-look input[type="button"]
+{
+	color: white;
+	font-size: 14px;
+	text-transform: uppercase;
+	border: 1px solid #b37c1c;
+	background:#ffb028;
+	padding: 12px;
+	margin:15px 0px 0px 10px;
+}
+.product-look input[type="button"]:hover {
+	background: #e89d1b;
+	text-decoration: underline;
+}
+.line
+{
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	border-top: 1px solid #DAEBE7;
+	max-width: 719px;
+}
+/*=========================Быстрый выбор===================================*/
+.quick-selection1
+{
+	max-width:970px;
+}
+.quick-selection1 .spisok-tovar li:nth-child(6)
+{
+	margin-right: 10px;
+}
+/*=========================Конец 4-й страницы==============================*/
+/* Макет для планшета: 481–768 пикс. Наследует стили от мобильного макета. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+/*=========================Верхнее Меню=================================*/
+#nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.nav 
+{
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	list-style: none;
+	max-width: 970px;
+}
+/*=========================Телефоны=====================================*/
+.telephone
+{
+	vertical-align: top;
+}
+}
+
+/* Макет для настольного компьютера: 769–1232 пикс. (максимум). Наследует стили от мобильного макета и макета для планшета. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 81.34%;
+	max-width: 970px;
+	padding-left: 0%;
+	padding-right: 0%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+/*=========================Верхнее Меню=================================*/
+#nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#nav ul li
+{
+	margin-right: 40px;
+}
+.nav
+{
+	width: 81.34%;
+	padding-left: 0.83%;
+	padding-right: 0.83%;
+	list-style: none;
+	max-width: 970px;
+}
+header
+{
+	padding:6px 0px 12px 0px;
+}
+/*=========================Логотип======================================*/
+.logo 
+{
+	margin-right: 58px;
+}
+/*=========================Телефоны=====================================*/
+.telephone
+{
+	padding: 22px 0px 12px 0px;
+}
+/*=========================Форма авторизации============================*/
+.autorization
+{
+	margin-left: 30px;
+}
+/*=========================Форма поиска=================================*/
+.search 
+{
+	padding-top: 16px;
+}
+.search  input[type="text"]
+{
+	width:325px;
+	height: 31px;
+}
+/*=========================Меню разделов=================================*/
+.menu ul li a img 
+{
+	padding: 18px 22px;
+}
+.menu2 li 
+{
+	margin-right: 8.28px;
+	width:114px;
+}
+.section
+{
+	padding: 5px 0px 8px 0px;
+	height: 35px;
+}
+/*=========================Слайдер=======================================*/
+#slider-wrap{ /* Оболочка слайдера и кнопок */
+	width:638px; 
+	height: 240px;
+	}
+#slider{ /* Оболочка слайдера */
+	width:638px;
+	height:240px;
+	overflow: hidden;
+	position:relative;}
+.slide
+{ /* Слайд */
+	width:100%;
+	height:100%;
+}
+.slide p
+{
+	margin-top: 114px;
+}
+.sli-links
+{ /* Кнопки смены слайдов */
+	margin-top: -21px;
+	text-align: right;
+	position: relative;
+	margin-right: 10px;
+}
+/*=========================Банеры========================================*/
+.silka 
+{
+	width: 327px;
+}
+.silka1 
+{
+	padding: 52px 0px;
+}
+.silka2 
+{
+	padding: 54.5px 0px;
+}
+/*=========================Список светотехника=============================*/
+.lighting li
+{
+	width:239px;
+}
+/*=========================Список Новинок и лидеров продаж=================*/
+.spisok li
+{
+	width: 318px;
+}
+.spisok li:last-child
+{
+	width: 320px;
+}
+.novetly b 
+{
+	margin-top: 21px;
+}
+/*=========================Список2 светотехника=============================*/
+.lighting2 li
+{
+	width:239px;
+}
+/*=========================Список2 Новинок и лидеров продаж=================*/
+.news
+{
+	margin-bottom:20px !important;
+}
+/*=========================Список категорий=================================*/
+.section-name {
+margin-bottom: 10px;
+min-height: 40px;
+}
+/*=========================Почему именно здесь==============================*/
+.why-buy {
+padding: 18px 18px 20px 18px;
+}
+.why-buy li 
+{
+	padding: 18px 12px 30px 0px;
+	margin-right: 24px;
+}
+.why-buy li:last-child
+{
+	margin:0px;
+}
+/*=========================Футер============================================*/
+footer 
+{
+	padding: 13px 22px 15px 70px;
+	margin-top: 12px;
+}
+.footer-menu1 
+{
+	margin-right: 125px;
+}
+.footer-menu2
+{
+	margin-right: 20px;
+}
+.footer-down 
+{
+	padding: 5px 20px 5px 0px;
+}
+/*=========================Вторая страница=================================*/
+.section-list
+{
+	width:212px;
+	padding: 17px 14px 0px 14px;
+}
+.section-list li 
+{
+	width: 240px;
+	margin-bottom: 30px;
+}
+/*=========================Спецпредложения и Акции=========================*/
+
+/*=========================Доставка========================================*/
+.dostavka
+{
+	width: 220px;
+}
+/*=========================Блок информацииа================================*/
+.information
+{
+	width:208px;
+}
+/*=========================Вторая часть 2-й страницы=======================*/
+.second-part
+{
+	width: 725px;
+}
+.name-category
+{
+	width: 720px;
+}
+/*=========================Слайдер страницы раздела========================*/
+.slider-wrap1 
+{
+	width: 478px !important;
+	height: 130px !important;
+}
+.slider1
+{
+	width: 478px !important;
+	height: 130px !important;
+}
+/*=========================Подкатегория вторая часть======================*/
+.podcategory
+{
+	width:720px;
+}
+/*========================================================================*/
+.podcategory2
+{
+	width: 720px;
+}
+.podcategory2-spisok
+{
+	margin-left: 26px;
+}
+.podcategory2 li
+ {
+	margin-right: 20px;
+}
+.podcategory2 li:last-child
+ {
+	margin-right:0px;
+}
+/*========================================================================*/
+.podcategory3
+{
+	width: 720px;
+}
+.podcategory3 li
+{
+	margin-right:20px;
+}
+.podcategory3 li img
+{
+	margin-right:18px;
+}
+.podcategory3 li:nth-child(3)
+{
+	margin-right:0px;
+}
+.podcategory3 li:last-child
+ {
+	margin-right:0px;
+}
+/*=========================Статьи==========================================*/
+.article li 
+{
+	margin-right: 20px;
+	height: 135px;
+}
+.article li:nth-child(3)
+{
+	margin-right:0px;
+}
+.article li:last-child
+ {
+	margin-right:0px;
+}
+/*=========================Конец второй страницы===========================*/
+/*=========================3-я страница====================================*/
+/*=========================1-я часть 3-й страницы==========================*/
+.subsection-first-part
+{
+	width:239px;
+}
+.filter li
+{
+	margin-bottom: 25px;
+}
+/*=========================2-я часть 3-й страницы==========================*/
+.subsection-second-part
+{
+	width:724px;
+}
+.spisok-subcategory li
+{
+	padding:15px 10px 12px 25px;
+}
+.spisok-subcategory li ul li:first-child
+{
+	margin-right:44px;
+}
+.spisok-subcategory li ul li:last-child
+{
+	margin-left: 66px;
+	text-align: center;
+}
+.number 
+{
+margin-top: 20px;
+}
+/*=========================Конец 3-й страницы==============================*/
+/*=========================4-я страница====================================*/
+/*=========================1-я часть 4-й страницы==========================*/
+.commodity-first-part
+{
+	width: 724px;
+}
+.commodity-info
+{
+	width:390px;
+}
+.commodity-characteristics
+{
+	margin-top:30px;
+}
+/*=========================2-я часть 4-й страницы==========================*/
+.commodity-second-part
+{
+	width:239px;
+}
+.line
+{
+	margin-top: 16%;
+	margin-bottom: 10px;
+}
+/*=========================Конец 4-й страницы==============================*/
+}
